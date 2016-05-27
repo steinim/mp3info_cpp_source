@@ -1,0 +1,202 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 2,2,4,0
+ PRODUCTVERSION 2,2,4,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "part of a document found at http://home.swipnet.se/grd/mp3info\0"
+            VALUE "CompanyName", "Grim Reaper Designs\0"
+            VALUE "FileDescription", "example program, on how to read information from .mp3 files\0"
+            VALUE "FileVersion", "1.01\0"
+            VALUE "InternalName", "MP3INFO\0"
+            VALUE "LegalCopyright", "Copyright ©1999,  Grim Reaper Designs\0"
+            VALUE "OriginalFilename", "MP3Info.exe\0"
+            VALUE "PrivateBuild", "1\0"
+            VALUE "ProductName", "MP3Info Example\0"
+            VALUE "ProductVersion", "1.01\0"
+            VALUE "SpecialBuild", "1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_WINDOW DIALOGEX 0, 0, 431, 145
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "MP3Info - get non musical information from .MP3's"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OPENED_FILE,65,7,152,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MPEG_VERSION,65,26,152,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Variable BitRate",IDC_VBR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,65,45,152,14
+    EDITTEXT        IDC_BITRATE,65,64,51,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FREQUENCY,65,83,51,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FRAMES,65,102,51,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_LENGTH,156,64,61,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FILESIZE,156,83,61,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MODE,156,102,61,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TITLE,272,7,152,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARTIST,272,26,152,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALBUM,272,45,152,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GENRE,272,64,152,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMENT,272,83,152,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YEAR,271,102,51,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TRACK,373,102,51,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "&Open",IDOPEN,253,124,50,14
+    DEFPUSHBUTTON   "E&xit",IDEXIT,374,124,50,14
+    LTEXT           "opened .mp3-file:",IDC_STATIC,7,7,55,14,SS_CENTERIMAGE
+    LTEXT           "Title:",IDC_STATIC,235,7,33,14,SS_CENTERIMAGE
+    LTEXT           "MPEG version:",IDC_STATIC,7,26,55,14,SS_CENTERIMAGE
+    LTEXT           "Artist:",IDC_STATIC,235,26,33,14,SS_CENTERIMAGE
+    LTEXT           "Album",IDC_STATIC,235,45,33,14,SS_CENTERIMAGE
+    LTEXT           "Genre:",IDC_STATIC,235,64,33,14,SS_CENTERIMAGE
+    LTEXT           "Comment:",IDC_STATIC,235,83,33,14,SS_CENTERIMAGE
+    LTEXT           "Year:",IDC_STATIC,235,102,33,14,SS_CENTERIMAGE
+    LTEXT           "Track:",IDC_STATIC,344,102,25,14,SS_CENTERIMAGE
+    LTEXT           "Bitrate:",IDC_STATIC,21,64,41,14,SS_CENTERIMAGE
+    LTEXT           "Length:",IDC_STATIC,131,64,25,14,SS_CENTERIMAGE
+    LTEXT           "Frequency:",IDC_STATIC,21,83,41,14,SS_CENTERIMAGE
+    LTEXT           "Size:",IDC_STATIC,131,83,25,14,SS_CENTERIMAGE
+    LTEXT           "No o Frames:",IDC_STATIC,21,102,41,14,SS_CENTERIMAGE
+    LTEXT           "Mode:",IDC_STATIC,131,102,25,14,SS_CENTERIMAGE
+    PUSHBUTTON      "&About",IDABOUT,313,124,50,14
+    PUSHBUTTON      "&Save ID3 tag",IDSAVETAG,193,124,50,14,WS_DISABLED
+    PUSHBUTTON      "&Play",IDPLAYFILE,132,124,50,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MP3INFO             ICON    DISCARDABLE     "mp3info.ico"
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
